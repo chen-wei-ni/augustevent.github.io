@@ -319,7 +319,7 @@
   }
   20% {
     left: 0;
-    transform: translateX(200px);
+    transform: translateX(150px);
     filter: brightness(120%);
     opacity: 1;    
   }
