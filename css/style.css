@@ -416,6 +416,7 @@ ul {
   width: 390px;
   left: 2%;
   top: -37px;
+  pointer-events: none;
 }
 
 .prize-box .treasure-container .treasure-img .inner-img:nth-child(1) {
