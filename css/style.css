@@ -991,6 +991,8 @@ ul {
     right: -6%;
     bottom: 16%;
     width: 100px;
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
   }
   .site-main-wrapper .pc-mode .glow .cristal2 {
     left: -5%;
@@ -998,13 +1000,13 @@ ul {
     width: 130px;
     -webkit-animation-delay: -1s;
             animation-delay: -1s;
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
   }
   .site-main-wrapper .pc-mode .glow .cristal3 {
     right: 2%;
     top: 33%;
     width: 40px;
-    -webkit-animation-delay: -8s;
-            animation-delay: -8s;
   }
   .site-main-wrapper .pc-mode .glow .cristal4 {
     right: -8%;
