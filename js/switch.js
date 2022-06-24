@@ -60,24 +60,29 @@ animateTitle.classList.add('effect');
 })*/
 
 var scaleItem = document.querySelector('.bnTitle');
-anime({
-	targets: scaleItem,	
-	keyframes: [
-		{translateY: '-800'},
-		{perspective: 800},
-		{rotateX: 720},
-		{translateY: 0},		
-		{rotateX: 0},	
-	  ],
-	scale: [0,1],	
-	duration: 800,
-	easing: 'spring(1, 80, 10, 0)',
-	delay: 400,
-	complete: function () {
-        animationDone = true;
-		animateAdd();
-    }   
-  });
+var bodyWidth = screen.width;
+if(bodyWidth > 768){
+	var jumpAnime = anime({
+		targets: scaleItem,	
+		keyframes: [
+			{translateY: '-800'},
+			{perspective: 800},
+			{rotateX: 720},
+			{translateY: 0},		
+			{rotateX: 0},	
+		],
+		scale: [0,1],	
+		duration: 800,
+		easing: 'spring(1, 80, 10, 0)',
+		delay: 400,
+		complete: function () {
+			animationDone = true;
+			animateAdd();
+		}   
+	});
+}else{
+	anime.remove(scaleItem);
+}
 
 function animateAdd(){
 	scaleItem.classList.add('effect');

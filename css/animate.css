@@ -295,7 +295,7 @@
   }
   20% {
     left: 0;
-    transform: translateX(500px);
+    transform: translateX(470px);
     filter: brightness(120%);
     opacity: 1;    
   }
@@ -319,7 +319,7 @@
   }
   20% {
     left: 0;
-    transform: translateX(150px);
+    transform: translateX(170px);
     filter: brightness(120%);
     opacity: 1;    
   }
