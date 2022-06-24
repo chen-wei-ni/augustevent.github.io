@@ -69,10 +69,10 @@ anime({
 		{translateY: 0},		
 		{rotateX: 0},	
 	  ],
-	scale: [0.1,1],	
+	scale: [0,1],	
 	duration: 800,
 	easing: 'spring(1, 80, 10, 0)',
-	delay: 200,
+	delay: 400,
 	complete: function () {
         animationDone = true;
 		animateAdd();
