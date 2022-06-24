@@ -1220,7 +1220,7 @@ ul {
     margin: 0 auto;
     position: absolute;
     right: .5rem;
-    bottom: 50%;
+    top: 55%;
   }
   .all_table {
     -webkit-box-orient: vertical;
@@ -1287,6 +1287,12 @@ ul {
   }
   .prize-box .treasure-container .text-prize h4 {
     font-size: 9vw;
+  }
+  .switch-list {
+    margin: .5rem;
+  }
+  .switch-list ul li::after {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
