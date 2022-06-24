@@ -80,7 +80,14 @@ var scaleItem = document.querySelector('.bnTitle');
 			}   
 		});
 	}else {
-		anime.remove(scaleItem);
+		anime({
+			targets: scaleItem,	
+			scale: [0,1],
+			complete: function () {
+				animationDone = true;
+				animateAdd();
+			}   
+		});
 	}
 
 // if(bodyWidth > 768){
